@@ -41,8 +41,8 @@ I'm a Final-Year Computer Science student interested in Cloud Computing, Mobile 
 
 ## Connect With Me
 
-- 💼 **Professional Network:** [Link to your LinkedIn, Portfolio, or CV]
-- 📧 **Direct Contact:** [Your email address or professional contact point]
+- 💼 **Professional Network:** https://www.linkedin.com/in/wycleftavasi/
+- 📧 **Direct Contact:** wtwasike@gmail.com
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f0c29&height=100&section=footer" />
