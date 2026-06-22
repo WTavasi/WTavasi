@@ -116,7 +116,7 @@ A Java and MySQL-based e-commerce management platform developed collaboratively 
 ---
 
 ## Certifications
-
+- 📜 AWS Academy Cloud Foundations
 - 📜 Cisco CCNA: Enterprise Networking, Security and Automation
 - 📜 Cisco CCNA: Switching, Routing and Wireless Essentials
 - 📜 Cisco CCNA: Introduction to Networks
