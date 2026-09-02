@@ -128,6 +128,14 @@ tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
 
 ### `$ git log --stat --author=WTavasi`
 
+<!--
+  NOTE: github-readme-stats.vercel.app and github-readme-activity-graph.vercel.app
+  are the shared public demo deployments and go down periodically (503/402 when
+  their free-tier quota is hit). If these look broken, either wait it out or
+  self-host your own instance: https://github.com/anuraghazra/github-readme-stats
+  and https://github.com/Ashutosh00710/github-readme-activity-graph both have a
+  one-click "Deploy to Vercel" button in their README.
+-->
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=WTavasi&show_icons=true&hide_border=true&bg_color=0f0c29&title_color=67e8f9&icon_color=67e8f9&text_color=ffffff" height="165"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WTavasi&layout=compact&hide_border=true&bg_color=0f0c29&title_color=67e8f9&text_color=ffffff" height="165"/>
@@ -135,6 +143,18 @@ tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=WTavasi&bg_color=0f0c29&color=67e8f9&line=2c5364&point=67e8f9&area=true&hide_border=true" />
+</p>
+
+---
+
+### `$ ./contribution-snake.sh`
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/github-contribution-grid-snake.svg" />
+    <img alt="a snake eating my contribution graph" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/github-contribution-grid-snake.svg" />
+  </picture>
 </p>
 
 <details>
