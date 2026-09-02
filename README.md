@@ -157,19 +157,6 @@ tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
   </picture>
 </p>
 
-<details>
-<summary><code>$ sudo cat ~/.plan</code></summary>
-
-```text
-[sudo] password for wyclef: ********
-Access granted.
-
-Outside of code: music performance, composition & arranging,
-and filmmaking — mostly figuring out where creative work and
-technical systems actually overlap.
-```
-
-</details>
 
 ---
 
