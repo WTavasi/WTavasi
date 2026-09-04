@@ -12,9 +12,9 @@ Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
   Role:             Final-year CS & Informatics student
   Certifications:   7 installed  (Cisco x4, AWS, Apple, DELE)
   Projects:         3 tracked    (see ls ~/projects)
-  Languages:        Flutter, Java, Swift, Kotlin, Python, JavaScript, C, C++, SQL
+  Languages:        Flutter, Swift, Python, Kotlin, Java, C, C++, HTML/CSS, JavaScript, SQL
   Locale:           en_US · es_ES (learning)
-
+  ---------------------------------------------------------------
 5 processes running. Run 'ps -ef | grep wyclef' for details.
 ```
 ---
@@ -24,7 +24,7 @@ Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
 
 ```text
 $ whoami
-Wyclef Tavasi, a final-year Computer Science & Informatics student.
+Wyclef Tavasi — final-year Computer Science & Informatics student.
 Interested in reliable systems: cloud infra, Linux administration,
 secure system design, and mobile apps.
 
@@ -115,20 +115,23 @@ tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
 ### `$ git log --stat --author=WTavasi`
 
 <!--
-  NOTE: github-readme-stats.vercel.app and github-readme-activity-graph.vercel.app
-  are the shared public demo deployments and go down periodically (503/402 when
-  their free-tier quota is hit). If these look broken, either wait it out or
-  self-host your own instance: https://github.com/anuraghazra/github-readme-stats
-  and https://github.com/Ashutosh00710/github-readme-activity-graph both have a
-  one-click "Deploy to Vercel" button in their README.
+  Cards served by github-profile-summary-cards.vercel.app (vn7n24fzkq).
+  Swap `theme=` on all four to restyle: tokyonight, github_dark, 2077,
+  radical, nord_dark, dracula, monokai, zenburn.
+  Replaces github-readme-stats + github-readme-activity-graph, whose shared
+  public deployments return 503 / 402 (free-tier quota exhausted).
 -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=WTavasi&show_icons=true&hide_border=true&bg_color=0f0c29&title_color=67e8f9&icon_color=67e8f9&text_color=ffffff" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WTavasi&layout=compact&hide_border=true&bg_color=0f0c29&title_color=67e8f9&text_color=ffffff" height="165"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WTavasi&theme=tokyonight" width="98%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=WTavasi&bg_color=0f0c29&color=67e8f9&line=2c5364&point=67e8f9&area=true&hide_border=true" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=WTavasi&theme=tokyonight" height="200" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=WTavasi&theme=tokyonight" height="200" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=WTavasi&theme=tokyonight&utcOffset=3" height="200" />
 </p>
 
 ---
@@ -149,9 +152,11 @@ tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
 
 ```text
 MUSIC
-    Classically trained multi-instrumentalist. Performs with orchestras;
-    composes, arranges and produces.
+    Classically trained multi-instrumentalist. Performs with orchestras,
+    composes, arranges and produces music.
 
+FILM
+    A long-running interest — the Star Wars prequels above all.
 ```
 
 ---
