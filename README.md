@@ -6,8 +6,6 @@
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=67E8F9&center=true&vCenter=true&width=600&lines=Cloud+Computing;Systems+Administration;Software+Engineering;Swift+%2F+iOS+Development" />
 </p>
 
-<p align="center"><sub>● ● ●&nbsp;&nbsp;wyclef@github: ~</sub></p>
-
 ```text
 $ whoami
 Wyclef Tavasi — final-year Computer Science & Informatics student.
@@ -25,12 +23,8 @@ $ neofetch
   hobbies   Music composition, filmmaking
   locale    en_US / es_ES (learning)
 -------------------------------------------------
-```
 
-<details>
-<summary><code>$ ps -ef | grep wyclef</code>  — current focus</summary>
-
-```text
+$ ps -ef | grep wyclef
 USER     PID   STATE      COMMAND
 wyclef   1001  building   real-time-emergency-response-framework
 wyclef   1002  learning   cloud-computing distributed-systems devops
@@ -39,16 +33,13 @@ wyclef   1004  hardening  linux-server-administration
 wyclef   1005  exploring  cybersecurity secure-system-design
 ```
 
-</details>
-
 ---
 
 ### `$ ls ~/projects`
 
-<details>
-<summary><code>man emergency-response-framework</code></summary>
-
 ```text
+$ man emergency-response-framework
+
 NAME
     Real-Time Emergency Response Coordination Framework
 
@@ -61,12 +52,9 @@ STATUS
     In active development
 ```
 
-</details>
-
-<details>
-<summary><code>man finatrack</code></summary>
-
 ```text
+$ man finatrack
+
 NAME
     FinaTrack
 
@@ -78,12 +66,9 @@ STACK
     Swift, UIKit -> migrating to SwiftUI
 ```
 
-</details>
-
-<details>
-<summary><code>man fleamart</code></summary>
-
 ```text
+$ man fleamart
+
 NAME
     FleaMart
 
@@ -94,8 +79,6 @@ DESCRIPTION
 STACK
     Java, MySQL, JDBC
 ```
-
-</details>
 
 ---
 
@@ -109,8 +92,9 @@ systems:    [Linux, Cisco Networking, Server Administration, Cryptography]
 tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
 ```
 
-<details>
-<summary><code>$ ls -la ~/certifications</code></summary>
+---
+
+### `$ ls -la ~/certifications`
 
 ```text
 -rw-r--r--  wyclef  staff  AWS_Academy_Cloud_Foundations.pdf
@@ -121,8 +105,6 @@ tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
 -rw-r--r--  wyclef  staff  Apple_iOS_App_Development_with_Swift.pdf
 -rw-r--r--  wyclef  staff  DELE_A1_Spanish.pdf
 ```
-
-</details>
 
 ---
 
@@ -156,7 +138,6 @@ tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
     <img alt="a snake eating my contribution graph" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/github-contribution-grid-snake.svg" />
   </picture>
 </p>
-
 
 ---
 
