@@ -1,28 +1,32 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f0c29,50:203a43,100:2c5364&height=90&text=wyclef@github:~$%20neofetch&fontSize=22&fontColor=67e8f9&fontAlign=50&fontAlignY=55&animation=fadeIn" width="100%" />
-</p>
+```text
+$ ssh wyclef@github.com
 
+Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
+
+ * Focus:      cloud · linux · networking · server administration
+ * Currently:  emergency-response-framework (in development)
+ * Open to:    internships, graduate roles, collaboration
+
+  System information
+  ---------------------------------------------------------------
+  Role:             Final-year CS & Informatics student
+  Certifications:   7 installed  (Cisco x4, AWS, Apple, DELE)
+  Projects:         3 tracked    (see ls ~/projects)
+  Languages:        Flutter, Java, Swift, Kotlin, Python, JavaScript, C, C++, SQL
+  Locale:           en_US · es_ES (learning)
+
+5 processes running. Run 'ps -ef | grep wyclef' for details.
+```
+---
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=67E8F9&center=true&vCenter=true&width=600&lines=Cloud+Computing;Systems+Administration;Software+Engineering;Swift+%2F+iOS+Development" />
 </p>
 
 ```text
 $ whoami
-Wyclef Tavasi — final-year Computer Science & Informatics student.
+Wyclef Tavasi, a final-year Computer Science & Informatics student.
 Interested in reliable systems: cloud infra, Linux administration,
-secure system design, and mobile apps. Also composes music and
-makes short films when not staring at a terminal.
-
-$ neofetch
--------------------------------------------------
-  os        Human (still compiling)
-  role      CS & Informatics student, final year
-  shell     Swift / Kotlin / Java / Python
-  editor    Xcode, VS Code
-  focus     Cloud · Linux · Security · Mobile
-  hobbies   Music composition, filmmaking
-  locale    en_US / es_ES (learning)
--------------------------------------------------
+secure system design, and mobile apps.
 
 $ ps -ef | grep wyclef
 USER     PID   STATE      COMMAND
@@ -141,14 +145,23 @@ tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
 
 ---
 
+### `$ cat ~/.interests`
+
+```text
+MUSIC
+    Classically trained multi-instrumentalist. Performs with orchestras;
+    composes, arranges and produces.
+
+```
+
+---
+
 ```text
 $ cat ~/.contact
 linkedin  https://www.linkedin.com/in/WyclefTavasi
 email     wtwasike@gmail.com
+
+$ logout
+
+Connection to github.com closed.
 ```
-
-<p align="center"><sub>wyclef@github:~$ <em>building reliable systems, one commit at a time</em>█</sub></p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:2c5364,50:203a43,100:0f0c29&height=60" width="100%" />
-</p>
