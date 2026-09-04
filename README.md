@@ -136,18 +136,6 @@ tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
 
 ---
 
-### `$ ./contribution-snake.sh`
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/github-contribution-grid-snake.svg" />
-    <img alt="a snake eating my contribution graph" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/github-contribution-grid-snake.svg" />
-  </picture>
-</p>
-
----
-
 ### `$ cat ~/.interests`
 
 ```text
