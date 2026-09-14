@@ -1,6 +1,6 @@
-```text
-$ ssh wyclef@github.com
+### `$ ssh wyclef@github.com`
 
+```text
 Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
 
  * Focus:      cloud · linux · networking · server administration
@@ -148,9 +148,9 @@ FILM
 ```
 
 ---
+### `$ cat ~/.contact`
 
 ```text
-$ cat ~/.contact
 linkedin  https://www.linkedin.com/in/WyclefTavasi
 email     wtwasike@gmail.com
 
