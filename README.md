@@ -12,7 +12,7 @@ Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
   Role:             Final-year CS & Informatics student
   Certifications:   8 installed  (Cisco x4, AWS x2, Apple, DELE)
   Projects:         3 tracked    (see ls ~/projects)
-  Languages:        Flutter, Swift, Python, Kotlin, Java, C, C++, HTML/CSS, JavaScript, Bash, SQL
+  Languages:        Swift, Kotlin, Java, Python, C++, C, SQL, Bash, JavaScript, HTML/CSS, Dart (Flutter)
   Locale:           en_US · es_ES (learning)
   ---------------------------------------------------------------
 5 processes running. Run 'ps -ef | grep wyclef' for details.
@@ -89,11 +89,12 @@ STACK
 ### `$ cat stack.yml`
 
 ```yaml
-languages:  [Java, Swift, Kotlin, Python, JavaScript, C++, C, SQL, HTML, CSS]
-frameworks: [React, Node.js, Firebase, UIKit, SwiftUI]
-databases:  [MySQL, PostgreSQL, Firebase]
-systems:    [Linux, Cisco Networking, Server Administration, Cryptography]
-tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
+languages:       [Swift, Kotlin, Java, Python, C++, C, SQL, Bash, JavaScript, HTML/CSS, Dart (Flutter)]
+cloud & DevOps:  [AWS, Azure, Docker, Kubernetes, Git, GitHub, CI/CD]
+frameworks:      [React, Node.js, NestJS, Flutter, Firebase, UIKit, SwiftUI]
+databases:       [MySQL, PostgreSQL, Firebase, Redis, Firebase (Firestore/Realtime DB)]
+systems:         [Linux, Cisco Networking, Server Administration, Cryptography]
+tools:           [Git, GitHub, VS Code, Xcode, Android Studio]
 ```
 
 ---
@@ -114,14 +115,6 @@ tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
 ---
 
 ### `$ git log --stat --author=WTavasi`
-
-<!--
-  Cards served by github-profile-summary-cards.vercel.app (vn7n24fzkq).
-  Swap `theme=` on all four to restyle: tokyonight, github_dark, 2077,
-  radical, nord_dark, dracula, monokai, zenburn.
-  Replaces github-readme-stats + github-readme-activity-graph, whose shared
-  public deployments return 503 / 402 (free-tier quota exhausted).
--->
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WTavasi&theme=tokyonight" width="98%" />
 </p>
