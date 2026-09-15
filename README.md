@@ -10,9 +10,9 @@ Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
   System information
   ---------------------------------------------------------------
   Role:             Final-year CS & Informatics student
-  Certifications:   7 installed  (Cisco x4, AWS, Apple, DELE)
+  Certifications:   8 installed  (Cisco x4, AWS x2, Apple, DELE)
   Projects:         3 tracked    (see ls ~/projects)
-  Languages:        Flutter, Swift, Python, Kotlin, Java, C, C++, HTML/CSS, JavaScript, SQL
+  Languages:        Flutter, Swift, Python, Kotlin, Java, C, C++, HTML/CSS, JavaScript, Bash, SQL
   Locale:           en_US · es_ES (learning)
   ---------------------------------------------------------------
 5 processes running. Run 'ps -ef | grep wyclef' for details.
@@ -101,6 +101,7 @@ tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
 ### `$ ls -la ~/certifications`
 
 ```text
+-rw-r--r--  wyclef  staff  AWS_Academy_Cloud_Security_Foundations.pdf
 -rw-r--r--  wyclef  staff  AWS_Academy_Cloud_Foundations.pdf
 -rw-r--r--  wyclef  staff  CCNA_Enterprise_Networking_Security_Automation.pdf
 -rw-r--r--  wyclef  staff  CCNA_Switching_Routing_Wireless_Essentials.pdf
@@ -139,12 +140,19 @@ tools:      [Git, GitHub, VS Code, Xcode, NetBeans]
 ### `$ cat ~/.interests`
 
 ```text
+INTERESTS
+    Big fan of all things music, film, and art.
+
 MUSIC
     Classically trained multi-instrumentalist. Performs with orchestras,
     composes, arranges and produces music.
 
 FILM
-    A long-running interest — the Star Wars prequels above all.
+    The Star Wars prequels above all else.
+
+ART
+    Drawn to visual art and design in general and always exploring
+    something new.
 ```
 
 ---
