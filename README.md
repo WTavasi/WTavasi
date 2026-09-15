@@ -17,7 +17,7 @@ Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
   ---------------------------------------------------------------
 5 processes running. Run 'ps -ef | grep wyclef' for details.
 ```
----
+
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=67E8F9&center=true&vCenter=true&width=600&lines=Cloud+Computing;Systems+Administration;Software+Engineering;Swift+%2F+iOS+Development" />
 </p>
