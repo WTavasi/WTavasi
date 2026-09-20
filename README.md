@@ -153,7 +153,7 @@ ART
 
 ```text
 linkedin  https://www.linkedin.com/in/WyclefTavasi
-email     wtwasike@gmail.com
+email     wycleftavasi@gmail.com
 
 $ logout
 
