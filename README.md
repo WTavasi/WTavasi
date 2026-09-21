@@ -4,7 +4,7 @@
 Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
 
  * Focus:      cloud · linux · networking · server administration
- * Currently:  emergency-response-framework (in development)
+ * Currently:  elder-emergency-escalation (in development)
  * Open to:    internships, graduate roles, collaboration
 
   System information
@@ -30,7 +30,7 @@ secure system design, and mobile apps.
 
 $ ps -ef | grep wyclef
 USER     PID   STATE      COMMAND
-wyclef   1001  building   real-time-emergency-response-framework
+wyclef   1001  building   elder-emergency-escalation-framework
 wyclef   1002  learning   cloud-computing distributed-systems devops
 wyclef   1003  migrating  finatrack (UIKit -> SwiftUI)
 wyclef   1004  hardening  linux-server-administration
@@ -42,10 +42,10 @@ wyclef   1005  exploring  cybersecurity secure-system-design
 ### `$ ls ~/projects`
 
 ```text
-$ man emergency-response-framework
+$ man elder-emergency-escalation
 
 NAME
-    Real-Time Emergency Response Coordination Framework
+    Real-Time Elderly Emergency Response Coordination Framework
 
 DESCRIPTION
     Platform for improving emergency response workflows for elderly
