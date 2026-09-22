@@ -24,7 +24,7 @@ Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
 
 ```text
 $ whoami
-Wyclef Tavasi — final-year Computer Science & Informatics student.
+Wyclef Tavasi — Final-year Computer Science & Informatics student.
 Interested in reliable systems: cloud infra, Linux administration,
 secure system design, and mobile apps.
 
