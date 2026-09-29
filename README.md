@@ -8,13 +8,13 @@ Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
  * Open to:    internships, graduate roles, collaboration
 
   System information
-  ---------------------------------------------------------------
+  -------------------------------------------------------------------------------------
   Role:             Final-year CS & Informatics student
   Certifications:   8 installed  (Cisco x4, AWS x2, Apple, DELE)
   Projects:         3 tracked    (see ls ~/projects)
-  Languages:        Swift, Kotlin, Java, Python, C++, C, SQL, Bash, JavaScript, HTML/CSS, Dart (Flutter)
+  Languages:        Swift, Kotlin, Java, Python, C++, SQL, JavaScript, HTML/CSS, Dart
   Locale:           en_US · es_ES (learning)
-  ---------------------------------------------------------------
+  -------------------------------------------------------------------------------------
 5 processes running. Run 'ps -ef | grep wyclef' for details.
 ```
 
@@ -25,8 +25,7 @@ Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
 ```text
 $ whoami
 Wyclef Tavasi — Final-year Computer Science & Informatics student.
-Interested in reliable systems: cloud infra, Linux administration,
-secure system design, and mobile apps.
+Interested in reliable systems: cloud infra, Linux administration, secure system design, and mobile apps.
 
 $ ps -ef | grep wyclef
 USER     PID   STATE      COMMAND
@@ -48,9 +47,8 @@ NAME
     Real-Time Elderly Emergency Response Coordination Framework
 
 DESCRIPTION
-    Platform for improving emergency response workflows for elderly
-    individuals in home-based care. Real-time alerts, caregiver
-    coordination, escalation logic, and incident tracking.
+    Platform for improving emergency response workflows for elderly individuals in home-based care.
+    Real-time alerts, caregiver coordination, escalation logic, and incident tracking.
 
 STATUS
     In active development
@@ -63,8 +61,7 @@ NAME
     FinaTrack
 
 DESCRIPTION
-    iOS portfolio management app for tracking investments, asset
-    allocation, and performance metrics.
+    iOS portfolio management app for tracking investments, asset allocation, and performance metrics.
 
 STACK
     Swift, UIKit -> migrating to SwiftUI
@@ -89,7 +86,7 @@ STACK
 ### `$ cat stack.yml`
 
 ```yaml
-languages:       [Swift, Kotlin, Java, Python, C++, C, SQL, Bash, JavaScript, HTML/CSS, Dart (Flutter)]
+languages:       [Swift, Kotlin, Java, Python, C++, SQL, JavaScript, HTML/CSS, Dart]
 cloud & DevOps:  [AWS, Azure, Docker, Kubernetes, Git, GitHub, CI/CD]
 frameworks:      [React, Node.js, NestJS, Flutter, Firebase, UIKit, SwiftUI]
 databases:       [MySQL, PostgreSQL, Firebase, Redis, Firebase (Firestore/Realtime DB)]
@@ -137,15 +134,15 @@ INTERESTS
     Big fan of all things music, film, and art.
 
 MUSIC
-    Classically trained multi-instrumentalist. Performs with orchestras,
-    composes, arranges and produces music.
+    I am a classically trained musician and I am actively composing, arranging or producing new music.
+    I also perform with orchestras and live bands on the occasion.
 
 FILM
-    The Star Wars prequels above all else.
+    Long time Star Wars fan, specifically the prequels.
+    Getting back into the Hunger Games, including the books.
 
 ART
-    Drawn to visual art and design in general and always exploring
-    something new.
+    Drawn to visual art and design in general and always exploring something new.
 ```
 
 ---
