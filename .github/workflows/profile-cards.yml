@@ -3,7 +3,10 @@ name: profile cards
 on:
   schedule:
     - cron: "23 4 * * *"   # once a day
-  workflow_dispatch:        # adds a manual "Run workflow" button
+  workflow_dispatch:        # manual "Run workflow" button
+  push:
+    paths:
+      - ".github/workflows/profile-cards.yml"   # rerun automatically whenever this file changes
 
 permissions:
   contents: write
@@ -15,19 +18,21 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      # Purple snake. Light mode uses GitHub's normal green dots,
+      # dark mode uses navy-to-mint dots that match the cards.
       - name: Snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake.svg?color_snake=#0891B2
-            dist/snake-dark.svg?palette=github-dark&color_snake=#67E8F9
+            dist/snake.svg?color_snake=#7C3AED
+            dist/snake-dark.svg?palette=github-dark&color_snake=#A78BFA&color_dots=#112240,#0E4D4A,#14786F,#2BB3A0,#64FFDA
 
       - name: Stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&show=prs_merged&hide_rank=true&theme=tokyonight&hide_border=true
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&show=prs_merged&hide_rank=true&hide_border=true&bg_color=0A192F&title_color=64FFDA&text_color=CCD6F6&icon_color=64FFDA
           path: dist/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -35,8 +40,15 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=donut&langs_count=8&size_weight=0.5&count_weight=0.5&theme=tokyonight&hide_border=true
+          options: username=${{ github.repository_owner }}&layout=donut&langs_count=6&size_weight=0.5&count_weight=0.5&hide_border=true&bg_color=0A192F&title_color=64FFDA&text_color=CCD6F6
           path: dist/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Streak card
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&hide_border=true&background=0A192F&stroke=233554&ring=64FFDA&fire=A78BFA&currStreakNum=CCD6F6&currStreakLabel=64FFDA&sideNums=CCD6F6&sideLabels=CCD6F6&dates=8892B0
+          path: dist/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to output branch
