@@ -3,37 +3,43 @@
 ```text
 Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
 
- * Focus:      cloud · linux · networking · server administration
- * Currently:  elder-emergency-escalation (in development)
- * Open to:    internships, graduate roles, collaboration
+ * Role:       Final-year Computer Science & Informatics student
+ * Seeking:    Graduate / entry-level roles in Cloud, DevOps, and Networking
+ * Available:  January 2027
+ * Focus:      cloud infrastructure · Linux · networking · distributed systems
+ * Locale:     en_US · es_ES (learning)
 
-  System information
-  -------------------------------------------------------------------------------------
-  Role:             Final-year CS & Informatics student
-  Certifications:   8 installed  (Cisco x4, AWS x2, Apple, DELE)
-  Projects:         3 tracked    (see ls ~/projects)
-  Languages:        Swift, Kotlin, Java, Python, C++, SQL, JavaScript, HTML/CSS, Dart
-  Locale:           en_US · es_ES (learning)
-  -------------------------------------------------------------------------------------
-5 processes running. Run 'ps -ef | grep wyclef' for details.
+6 processes running. Run 'ps -ef | grep wyclef' for details.
 ```
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=67E8F9&center=true&vCenter=true&width=600&lines=Cloud+Computing;Systems+Administration;Software+Engineering;Swift+%2F+iOS+Development" />
+  <a href="https://www.linkedin.com/in/WyclefTavasi"><img src="https://img.shields.io/badge/LinkedIn-Wyclef_Tavasi-112240?style=for-the-badge&logo=linkedin&logoColor=64FFDA&labelColor=0A192F" alt="LinkedIn" /></a>
+  <a href="mailto:wycleftavasi@gmail.com"><img src="https://img.shields.io/badge/Email-wycleftavasi%40gmail.com-112240?style=for-the-badge&logo=gmail&logoColor=64FFDA&labelColor=0A192F" alt="Email" /></a>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=64FFDA&center=true&vCenter=true&width=600&lines=Cloud+%26+DevOps+Engineering;Linux+%26+Network+Administration;Distributed+Systems;iOS+Development+with+Swift" alt="Cloud and DevOps Engineering, Linux and Network Administration, Distributed Systems, iOS Development" />
 </p>
 
 ```text
 $ whoami
-Wyclef Tavasi — Final-year Computer Science & Informatics student.
-Interested in reliable systems: cloud infra, Linux administration, secure system design, and mobile apps.
+Wyclef Tavasi. I like building systems that keep working when things go wrong:
+cloud infrastructure, Linux servers, networks, and the backends behind real-time apps.
+I learn by building, and I document as I go.
+```
 
-$ ps -ef | grep wyclef
+---
+
+### `$ ps -ef | grep wyclef`
+
+```text
 USER     PID   STATE      COMMAND
-wyclef   1001  building   elder-emergency-escalation-framework
-wyclef   1002  learning   cloud-computing distributed-systems devops
-wyclef   1003  migrating  finatrack (UIKit -> SwiftUI)
+wyclef   1001  building   elder-emergency-escalation    # capstone: event-driven escalation engine
+wyclef   1002  building   distributed-load-balancer     # consistent hashing, Docker, failure detection
+wyclef   1003  learning   kubernetes                    # deploying a multi-service e-commerce app
 wyclef   1004  hardening  linux-server-administration
-wyclef   1005  exploring  cybersecurity secure-system-design
+wyclef   1005  migrating  finatrack                     # UIKit -> SwiftUI
+wyclef   1006  exploring  secure-system-design
 ```
 
 ---
@@ -44,14 +50,33 @@ wyclef   1005  exploring  cybersecurity secure-system-design
 $ man elder-emergency-escalation
 
 NAME
-    Real-Time Elderly Emergency Response Coordination Framework
+    Real-Time Emergency Response Coordination and Escalation Framework (capstone)
 
 DESCRIPTION
-    Platform for improving emergency response workflows for elderly individuals in home-based care.
-    Real-time alerts, caregiver coordination, escalation logic, and incident tracking.
+    Backend for home-based elderly care. A single SOS alert escalates automatically
+    from caregiver to family member to emergency responder until someone acknowledges
+    it, with an SMS fallback alongside push notifications and a full audit log.
+
+STACK
+    NestJS, PostgreSQL, Redis + BullMQ, WebSockets, Flutter, Firebase Cloud Messaging
 
 STATUS
     In active development
+```
+
+```text
+$ man distributed-load-balancer
+
+NAME
+    Distributed Load Balancer
+
+DESCRIPTION
+    Routes requests across containerised server replicas using consistent hashing
+    (512-slot hash ring, 9 virtual nodes per server), with background heartbeat
+    polling to detect failed servers.
+
+STACK
+    Python (Flask), Docker
 ```
 
 ```text
@@ -61,10 +86,10 @@ NAME
     FinaTrack
 
 DESCRIPTION
-    iOS portfolio management app for tracking investments, asset allocation, and performance metrics.
+    iOS app for tracking investments, asset allocation, and performance metrics.
 
 STACK
-    Swift, UIKit -> migrating to SwiftUI
+    Swift, UIKit, migrating to SwiftUI
 ```
 
 ```text
@@ -74,8 +99,8 @@ NAME
     FleaMart
 
 DESCRIPTION
-    Java + MySQL e-commerce management platform built collaboratively:
-    inventory, customer interactions, order processing.
+    Team-built e-commerce management platform covering inventory,
+    customer interactions, and order processing.
 
 STACK
     Java, MySQL, JDBC
@@ -86,43 +111,57 @@ STACK
 ### `$ cat stack.yml`
 
 ```yaml
-languages:       [Swift, Kotlin, Java, Python, C++, SQL, JavaScript, HTML/CSS, Dart]
-cloud & DevOps:  [AWS, Azure, Docker, Kubernetes, Git, GitHub, CI/CD]
-frameworks:      [React, Node.js, NestJS, Flutter, Firebase, UIKit, SwiftUI]
-databases:       [MySQL, PostgreSQL, Firebase, Redis, Firebase (Firestore/Realtime DB)]
-systems:         [Linux, Cisco Networking, Server Administration, Cryptography]
-tools:           [Git, GitHub, VS Code, Xcode, Android Studio]
+languages:  [Python, Java, Swift, Kotlin, Dart, JavaScript, C++, SQL, HTML/CSS]
+cloud:      [AWS, Azure]
+devops:     [Docker, Kubernetes, GitHub Actions, Git]
+systems:    [Linux server administration, Cisco routing & switching, network security, cryptography]
+backend:    [Node.js, NestJS, Flask]
+data:       [PostgreSQL, MySQL, Redis, Firebase]
+frontend:   [SwiftUI, UIKit, Flutter, React]
+tools:      [VS Code, Xcode, Android Studio]
 ```
 
 ---
 
-### `$ ls -la ~/certifications`
+### `$ tree ~/certifications`
 
 ```text
--rw-r--r--  wyclef  staff  AWS_Academy_Cloud_Security_Foundations.pdf
--rw-r--r--  wyclef  staff  AWS_Academy_Cloud_Foundations.pdf
--rw-r--r--  wyclef  staff  CCNA_Enterprise_Networking_Security_Automation.pdf
--rw-r--r--  wyclef  staff  CCNA_Switching_Routing_Wireless_Essentials.pdf
--rw-r--r--  wyclef  staff  CCNA_Introduction_to_Networks.pdf
--rw-r--r--  wyclef  staff  Cisco_IT_Essentials.pdf
--rw-r--r--  wyclef  staff  Apple_iOS_App_Development_with_Swift.pdf
--rw-r--r--  wyclef  staff  DELE_A1_Spanish.pdf
+certifications/
+├── aws-academy/
+│   ├── cloud-foundations
+│   └── cloud-security-foundations
+├── cisco-netacad/
+│   ├── ccna-1-introduction-to-networks
+│   ├── ccna-2-switching-routing-wireless-essentials
+│   ├── ccna-3-enterprise-networking-security-automation
+│   └── it-essentials
+├── apple/
+│   └── ios-app-development-with-swift
+└── languages/
+    └── dele-a1-spanish
+
+4 directories, 8 files
 ```
 
 ---
 
 ### `$ git log --stat --author=WTavasi`
+
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WTavasi&theme=tokyonight" width="98%" />
+  <img height="180" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/stats.svg" alt="GitHub stats" />
+  <img height="180" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/top-langs.svg" alt="Most used languages" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=WTavasi&theme=tokyonight" height="200" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=WTavasi&theme=tokyonight" height="200" />
+  <img src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/streak.svg" alt="Contribution streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=WTavasi&theme=tokyonight&utcOffset=3" height="200" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/snake.svg" />
+    <img alt="Snake eating my contribution graph" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/snake.svg" />
+  </picture>
 </p>
 
 ---
@@ -130,29 +169,13 @@ tools:           [Git, GitHub, VS Code, Xcode, Android Studio]
 ### `$ cat ~/.interests`
 
 ```text
-INTERESTS
-    Big fan of all things music, film, and art.
-
-MUSIC
-    I am a classically trained musician and I am actively composing, arranging or producing new music.
-    I also perform with orchestras and live bands on the occasion.
-
-FILM
-    Long time Star Wars fan, specifically the prequels.
-    Getting back into the Hunger Games, including the books.
-
-ART
-    Drawn to visual art and design in general and always exploring something new.
+music   Classically trained. I compose, arrange, and produce, and perform with
+        orchestras and live bands.
+film    Star Wars (the prequels, specifically) and The Hunger Games, books included.
+art     Visual art and design; always exploring something new.
 ```
 
----
-### `$ cat ~/.contact`
-
 ```text
-linkedin  https://www.linkedin.com/in/WyclefTavasi
-email     wycleftavasi@gmail.com
-
 $ logout
-
 Connection to github.com closed.
 ```
