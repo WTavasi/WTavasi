@@ -80,6 +80,22 @@ STACK
 ```
 
 ```text
+$ man matapredict
+
+NAME
+    MataPredict: Matatu Overcrowding Prediction (team project)
+
+DESCRIPTION
+    Predicts whether a matatu ride into Nairobi will be overcrowded (80% or more
+    of seats sold). Builds a ride-level dataset from Zindi ticket sales and
+    Digital Matatus route data, compares Logistic Regression and Decision Tree
+    models, and serves predictions through a Streamlit web app.
+
+STACK
+    Python, pandas, scikit-learn, Streamlit, Google Colab
+```
+
+```text
 $ man finatrack
 
 NAME
