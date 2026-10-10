@@ -144,8 +144,7 @@ tools:      [VS Code, Xcode, Android Studio]
 ```text
 certifications/
 ├── aws-academy/
-│   ├── cloud-foundations
-│   └── cloud-security-foundations
+│   └── cloud-foundations
 ├── cisco-netacad/
 │   ├── ccna-1-introduction-to-networks
 │   ├── ccna-2-switching-routing-wireless-essentials
@@ -156,7 +155,7 @@ certifications/
 └── languages/
     └── dele-a1-spanish
 
-4 directories, 8 files
+4 directories, 7 files
 ```
 
 ---
