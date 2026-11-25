@@ -1,16 +1,10 @@
 ### `$ ssh wyclef@github.com`
 
-```text
-Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
-
- * Role:       Final-year Computer Science & Informatics student
- * Seeking:    Graduate / entry-level roles in Cloud, DevOps, and Networking
- * Available:  January 2027
- * Focus:      cloud infrastructure · Linux · networking · distributed systems
- * Locale:     en_US · es_ES (learning)
-
-6 processes running. Run 'ps -ef | grep wyclef' for details.
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/terminal-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/terminal-light.svg" />
+  <img width="100%" alt="Terminal: wyclef@github boots and runs neofetch. Final-year Computer Science and Informatics student seeking cloud, DevOps and networking roles, available January 2027, with live GitHub stats and top languages." src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/terminal-dark.svg" />
+</picture>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/WyclefTavasi"><img src="https://img.shields.io/badge/LinkedIn-Wyclef_Tavasi-112240?style=for-the-badge&logo=linkedin&logoColor=64FFDA&labelColor=0A192F" alt="LinkedIn" /></a>
@@ -18,179 +12,256 @@ Welcome to wyclef-tavasi (GNU/Linux 6.8.0 x86_64)
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=64FFDA&center=true&vCenter=true&width=600&lines=Cloud+%26+DevOps+Engineering;Linux+%26+Network+Administration;Distributed+Systems;iOS+Development+with+Swift" alt="Cloud and DevOps Engineering, Linux and Network Administration, Distributed Systems, iOS Development" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=64FFDA&center=true&vCenter=true&width=600&lines=Cloud+%26+DevOps+Engineering;Linux+%26+Network+Administration;Distributed+Systems;iOS+Development+with+Swift" />
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=0F766E&center=true&vCenter=true&width=600&lines=Cloud+%26+DevOps+Engineering;Linux+%26+Network+Administration;Distributed+Systems;iOS+Development+with+Swift" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=64FFDA&center=true&vCenter=true&width=600&lines=Cloud+%26+DevOps+Engineering;Linux+%26+Network+Administration;Distributed+Systems;iOS+Development+with+Swift" alt="Cloud and DevOps Engineering, Linux and Network Administration, Distributed Systems, iOS Development with Swift" />
+  </picture>
 </p>
 
+### `$ whoami`
+
 ```text
-$ whoami
-Wyclef Tavasi. I like building systems that keep working when things go wrong:
-cloud infrastructure, Linux servers, networks, and the backends behind real-time apps.
-I learn by building, and I document as I go.
+Wyclef Tavasi. I like building systems that keep
+working when things go wrong: cloud infrastructure,
+Linux servers, networks, and the backends behind
+real-time apps. I learn by building, and I document
+as I go.
 ```
 
 ---
 
-### `$ ps -ef | grep wyclef`
+### `$ git log --graph --oneline --all`
 
-```text
-USER     PID   STATE      COMMAND
-wyclef   1001  building   elder-emergency-escalation    # capstone: event-driven escalation engine
-wyclef   1002  building   distributed-load-balancer     # consistent hashing, Docker, failure detection
-wyclef   1003  learning   kubernetes                    # deploying a multi-service e-commerce app
-wyclef   1004  hardening  linux-server-administration
-wyclef   1005  migrating  finatrack                     # UIKit -> SwiftUI
-wyclef   1006  exploring  secure-system-design
-```
+<pre>
+* <b>e3a91f0</b> (<b>HEAD -&gt; main</b>) 2027-01 open to cloud roles
+* <b>7c3d1b4</b> 2026-12 BSc ICS coursework complete
+* <b>5e8a0c7</b> 2026-09 AWS Academy cloud security
+* <b>4b1f9e2</b> 2026-04 Webmasters KE: MzaziCare SOS
+* <b>3b2f9d1</b> 2026-01 intern, Delta Creative: AWS
+* <b>2d71c0a</b> 2025    Cisco CCNA track, Apple Swift
+* <b>1e4f7b2</b> 2023-10 Cisco IT Essentials
+| * <b>9f2c6a1</b> (<b>music</b>) 2023 principal clarinet
+| * <b>61c2b7f</b> 2022-12 clarinet mentor, 13 students
+| * <b>4f8e1a3</b> 2021 led a ~50-piece school band
+|/
+* <b>0a1b2c3</b> init: Nairobi, Kenya
+</pre>
+
+<details>
+<summary><code>$ git log</code> (full commit messages)</summary>
+
+<pre>
+2027-01  Available for full-time cloud, DevOps and
+         networking roles.
+2026-12  Coursework complete for the BSc in
+         Informatics and Computer Science
+         (Strathmore University).
+2026-09  AWS Academy Graduate: Cloud Foundations
+         (June) and Cloud Security Foundations.
+2026-04  Software Engineering Associate, Webmasters
+         KE: built the MzaziCare panic button,
+         voice-triggered alerts, auto escalation and
+         the login flows.
+2026-01  Software Development &amp; IT Support Intern,
+         Delta Creative Solutions: apps in Docker on
+         AWS (EC2, S3), Grafana monitoring, on-call,
+         and automated reports that turned two-week
+         delays into early delivery.
+music    Principal clarinet in two orchestras.
+         Clarinet mentor to 13 students across
+         Nairobi schools. Led a school band of about
+         50 to national level and the State House
+         winners' gala.
+</pre>
+</details>
 
 ---
 
 ### `$ ls ~/projects`
 
-```text
-$ man elder-emergency-escalation
+<!-- BEGIN projects -->
+<pre>
+<b>$ man mzazicare</b>
 
-NAME
-    Real-Time Emergency Response Coordination and Escalation Framework (capstone)
+<b>NAME</b>
+    MzaziCare: emergency help for elders at home
+    (final-year capstone)
 
-DESCRIPTION
-    Backend for home-based elderly care. A single SOS alert escalates automatically
-    from caregiver to family member to emergency responder until someone acknowledges
-    it, with an SMS fallback alongside push notifications and a full audit log.
+<b>DESCRIPTION</b>
+    One SOS press escalates from caregiver to family
+    to emergency services until someone accepts.
+    Severity is scored from five weighted factors,
+    with an SMS fallback when push fails, live
+    updates and a full audit trail.
 
-STACK
-    NestJS, PostgreSQL, Redis + BullMQ, WebSockets, Flutter, Firebase Cloud Messaging
+<b>PROOF</b>
+    + 1,417 automated tests, 12 of 12 system tests
+    + escalates 57 ms after an unanswered deadline
+    + care circle sees live updates in 16 ms
 
-STATUS
-    In active development
-```
+<b>STACK</b>
+    NestJS, PostgreSQL, Redis + BullMQ, WebSockets,
+    Flutter, React, Docker, GitHub Actions
 
-```text
-$ man distributed-load-balancer
+<b>SEE ALSO</b>
+    <a href="https://github.com/WTavasi/elder-emergency-escalation">source</a> · 277 commits · pushed 2026-11-14
+</pre>
 
-NAME
-    Distributed Load Balancer
+<pre>
+<b>$ man load-balancer</b>
 
-DESCRIPTION
-    Routes requests across containerised server replicas using consistent hashing
-    (512-slot hash ring, 9 virtual nodes per server), with background heartbeat
-    polling to detect failed servers.
+<b>NAME</b>
+    Consistent Hashing Load Balancer
+    (distributed systems)
 
-STACK
-    Python (Flask), Docker
-```
+<b>DESCRIPTION</b>
+    Routes HTTP requests across containerised
+    replicas on a 512-slot hash ring with 9 virtual
+    nodes per server. A heartbeat monitor replaces
+    failed replicas on its own, and a REST API adds
+    or removes them at runtime.
 
-```text
-$ man matapredict
+<b>PROOF</b>
+    + 35 unit and API tests
+    + only nearby requests move when a server leaves
+    + live dashboard: ring, traffic split, recovery
 
-NAME
-    MataPredict: Matatu Overcrowding Prediction (team project)
+<b>STACK</b>
+    Python, Flask, Docker, pytest
 
-DESCRIPTION
-    Predicts whether a matatu ride into Nairobi will be overcrowded (80% or more
-    of seats sold). Builds a ride-level dataset from Zindi ticket sales and
-    Digital Matatus route data, compares Logistic Regression and Decision Tree
-    models, and serves predictions through a Streamlit web app.
+<b>SEE ALSO</b>
+    <a href="https://github.com/WTavasi/consistent-hashing-load-balancer">source</a> · 14 commits · pushed 2026-10-05
+</pre>
 
-STACK
-    Python, pandas, scikit-learn, Streamlit, Google Colab
-```
+<pre>
+<b>$ man solar-navigator</b>
 
-```text
-$ man finatrack
+<b>NAME</b>
+    3D-Solar-Navigator (Project Stellar)
+    (team of six)
 
-NAME
-    FinaTrack
+<b>DESCRIPTION</b>
+    A Solar System scene drawn with raster graphics
+    algorithms written from scratch in C++17. My
+    part is testing and integration.
 
-DESCRIPTION
-    iOS app for tracking investments, asset allocation, and performance metrics.
+<b>PROOF</b>
+    + built the CTest pipeline on GitHub Actions
+    + 163 test cases: unit, integration and visual
 
-STACK
-    Swift, UIKit, migrating to SwiftUI
-```
+<b>STACK</b>
+    C++17, CMake, CTest, GitHub Actions
 
-```text
-$ man fleamart
+<b>SEE ALSO</b>
+    <a href="https://github.com/WTavasi/3D-Solar-Navigator">source</a> · 62 commits by me · pushed 2026-11-16
+</pre>
+<!-- END projects -->
 
-NAME
-    FleaMart
+<details>
+<summary><code>$ ls ~/projects/more</code></summary>
 
-DESCRIPTION
-    Team-built e-commerce management platform covering inventory,
-    customer interactions, and order processing.
+<!-- BEGIN more-projects -->
+<pre>
+<a href="https://github.com/WTavasi/FinaTrack">finatrack</a>     iOS money tracker with Face ID login
+              Swift, UIKit, SwiftUI
+<a href="https://github.com/WTavasi/MataPredict">matapredict</a>   matatu overcrowding prediction (team)
+              Python, scikit-learn, Streamlit
+              <a href="https://matapredict-5seiycsqmwbumdomwionkh.streamlit.app/">live demo</a>
+<a href="https://github.com/WTavasi/FleaMart">fleamart</a>      store for student businesses (team)
+              Java, MySQL, JDBC
+</pre>
+<!-- END more-projects -->
 
-STACK
-    Java, MySQL, JDBC
-```
+</details>
+
+---
+
+### `$ ps -ef | grep wyclef`
+
+<!-- BEGIN ps -->
+<pre>
+ PID  STAT     LAST PUSH   CMD
+1001  building 2026-11-14  <a href="https://github.com/WTavasi/elder-emergency-escalation">elder-emergency-escalation</a>
+      # capstone: real-time escalation engine
+1002  staging  -           kubernetes-deployment
+      # multi-service e-commerce app; repo soon
+1003  porting  2026-09-14  <a href="https://github.com/WTavasi/FinaTrack">finatrack</a>
+      # UIKit to SwiftUI
+</pre>
+<!-- END ps -->
 
 ---
 
 ### `$ cat stack.yml`
 
-```yaml
-languages:  [Python, Java, Swift, Kotlin, Dart, JavaScript, C++, SQL, HTML/CSS]
-cloud:      [AWS, Azure]
-devops:     [Docker, Kubernetes, GitHub Actions, Git]
-systems:    [Linux server administration, Cisco routing & switching, network security, cryptography]
-backend:    [Node.js, NestJS, Flask]
-data:       [PostgreSQL, MySQL, Redis, Firebase]
-frontend:   [SwiftUI, UIKit, Flutter, React]
-tools:      [VS Code, Xcode, Android Studio]
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/stack-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/stack-light.svg" />
+  <img width="100%" alt="Tech stack. Languages: Python, TypeScript, JavaScript, C++, Swift, HTML, CSS; also Java, Go, Kotlin, C, C#, Dart, Bash, PowerShell. Cloud and DevOps: AWS, Azure, Docker, Kubernetes, Terraform, Ansible, GitHub Actions, GitLab CI, Jenkins, Git, Grafana. Systems: Linux, Ubuntu, Red Hat, Kali. Networking: Cisco routing and switching, VLANs, TCP/IP, DNS, DHCP. Backend and data: Node.js, NestJS, Flask, FastAPI, PostgreSQL, MySQL, MongoDB, Redis, Firebase. Mobile and web: iOS, Flutter, Android Studio, React. Tools: VS Code, Postman, Figma, CMake, Jest, Arduino." src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/stack-dark.svg" />
+</picture>
 
 ---
 
 ### `$ tree ~/certifications`
 
-```text
+<pre>
 certifications/
 ├── aws-academy/
-│   └── cloud-foundations
+│   ├── cloud-foundations
+│   └── cloud-security-foundations
 ├── cisco-netacad/
 │   ├── ccna-1-introduction-to-networks
-│   ├── ccna-2-switching-routing-wireless-essentials
-│   ├── ccna-3-enterprise-networking-security-automation
+│   ├── ccna-2-switching-routing-wireless
+│   ├── ccna-3-enterprise-security-automation
 │   └── it-essentials
 ├── apple/
 │   └── ios-app-development-with-swift
 └── languages/
     └── dele-a1-spanish
 
-4 directories, 7 files
-```
+4 directories, 8 files
+</pre>
 
 ---
 
-### `$ git log --stat --author=WTavasi`
+### `$ crontab -l`
 
-<p align="center">
-  <img height="180" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/stats.svg" alt="GitHub stats" />
-  <img height="180" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/top-langs.svg" alt="Most used languages" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/streak.svg" alt="Contribution streak" />
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/snake.svg" />
-    <img alt="Snake eating my contribution graph" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/snake.svg" />
-  </picture>
-</p>
+<pre>
+# when       what
+@weekly      study aws-solutions-architect-associate
+@monthly     terraform apply   # a project on AWS
+@reboot      git push kubernetes-deployment
+0 9 1 1 *    start --role cloud,devops  # Jan 2027
+</pre>
 
 ---
 
 ### `$ cat ~/.interests`
 
 ```text
-music   Classically trained. I compose, arrange, and produce, and perform with
+music   Classically trained clarinetist. I compose,
+        arrange and produce, and perform with
         orchestras and live bands.
-film    Star Wars (the prequels, specifically) and The Hunger Games, books included.
-art     Visual art and design; always exploring something new.
+film    Star Wars (the prequels, specifically) and
+        The Hunger Games, books included.
+art     Visual art and design; always exploring
+        something new.
 ```
+
+<details>
+<summary><code>$ git log --since="1 year ago" | snake</code></summary>
+<br />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/snake.svg" />
+  <img width="100%" alt="A snake eating my contribution graph" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/snake.svg" />
+</picture>
+</details>
 
 ```text
 $ logout
 Connection to github.com closed.
 ```
+
+<sub>This page rebuilds itself every day. <a href="https://github.com/WTavasi/WTavasi/blob/main/.github/workflows/profile.yml">profile.yml</a> pulls live numbers from the GitHub API, redraws the terminal, stack and snake, and commits any change. Text lives in <a href="https://github.com/WTavasi/WTavasi/blob/main/profile/config.toml">config.toml</a>.</sub>

@@ -1,0 +1,190 @@
+# Everything the profile generator reads.
+#
+# Edit the text here, push, and the "profile" workflow rebuilds the
+# terminal image, the stack image and the live README sections.
+# It also runs by itself once a day.
+#
+# Keep lines short. The README is read on phones too.
+
+user = "WTavasi"
+prompt_user = "wyclef"
+prompt_host = "github"
+timezone_offset_hours = 3   # used for the "Last login" line
+
+[hero]
+logo = "clarinet"          # "clarinet" or "initials"
+title = "wyclef@github: ~"
+top_languages = 5
+ignore_languages = ["Jupyter Notebook"]
+
+# Boot messages, printed one by one before the screen clears.
+boot = [
+  "Mounted /home/wyclef.",
+  "Started cloud-infrastructure.service.",
+  "Started linux-administration.service.",
+  "Started network-routing.service.",
+  "Started distributed-systems.service.",
+  "Started ios-development.service.",
+  "Reached target career.target.",
+]
+
+# What neofetch prints. Words in {braces} are filled with live data
+# from the GitHub API. The optional third item is used when the
+# live value is not available.
+info = [
+  ["Role", "Final-year CS & Informatics student"],
+  ["Seeking", "Cloud, DevOps & Networking roles"],
+  ["Available", "January 2027"],
+  ["Host", "Strathmore University, BSc ICS"],
+  ["Focus", "cloud, Linux, networks, distributed systems"],
+  ["Credentials", "AWS Academy, Cisco CCNA track, Apple"],
+  ["Locale", "en_US, es_ES (learning)"],
+  ["Repos", "{repos} public, {stars} stars, {followers} followers"],
+  ["Commits", "{commits_year} in the last year, {prs_year} PRs",
+              "{commits_total} in my repos"],
+]
+
+# ---------------------------------------------------------------
+# $ ps -ef | grep wyclef      (LAST PUSH is read from GitHub)
+# ---------------------------------------------------------------
+
+[[process]]
+pid = 1001
+state = "building"
+name = "elder-emergency-escalation"
+repo = "elder-emergency-escalation"
+note = "capstone: real-time escalation engine"
+
+[[process]]
+pid = 1002
+state = "staging"
+name = "kubernetes-deployment"
+note = "multi-service e-commerce app; repo soon"
+
+[[process]]
+pid = 1003
+state = "porting"
+name = "finatrack"
+repo = "FinaTrack"
+note = "UIKit to SwiftUI"
+
+# ---------------------------------------------------------------
+# $ ls ~/projects
+# featured = true  -> full man page
+# featured = false -> one line under "more projects"
+# team = true      -> commit count shows my commits only
+# ---------------------------------------------------------------
+
+[[project]]
+command = "mzazicare"
+repo = "elder-emergency-escalation"
+featured = true
+title = "MzaziCare: emergency help for elders at home"
+subtitle = "final-year capstone"
+description = """One SOS press escalates from caregiver to family \
+to emergency services until someone accepts. Severity is scored from \
+five weighted factors, with an SMS fallback when push fails, live \
+updates and a full audit trail."""
+proof = [
+  "1,417 automated tests, 12 of 12 system tests",
+  "escalates 57 ms after an unanswered deadline",
+  "care circle sees live updates in 16 ms",
+]
+stack = "NestJS, PostgreSQL, Redis + BullMQ, WebSockets, Flutter, React, Docker, GitHub Actions"
+
+[[project]]
+command = "load-balancer"
+repo = "consistent-hashing-load-balancer"
+featured = true
+title = "Consistent Hashing Load Balancer"
+subtitle = "distributed systems"
+description = """Routes HTTP requests across containerised replicas \
+on a 512-slot hash ring with 9 virtual nodes per server. A heartbeat \
+monitor replaces failed replicas on its own, and a REST API adds or \
+removes them at runtime."""
+proof = [
+  "35 unit and API tests",
+  "only nearby requests move when a server leaves",
+  "live dashboard: ring, traffic split, recovery",
+]
+stack = "Python, Flask, Docker, pytest"
+
+[[project]]
+command = "solar-navigator"
+repo = "3D-Solar-Navigator"
+featured = true
+team = true
+title = "3D-Solar-Navigator (Project Stellar)"
+subtitle = "team of six"
+description = """A Solar System scene drawn with raster graphics \
+algorithms written from scratch in C++17. My part is testing and \
+integration."""
+proof = [
+  "built the CTest pipeline on GitHub Actions",
+  "163 test cases: unit, integration and visual",
+]
+stack = "C++17, CMake, CTest, GitHub Actions"
+
+[[project]]
+command = "finatrack"
+repo = "FinaTrack"
+featured = false
+summary = "iOS money tracker with Face ID login"
+stack = "Swift, UIKit, SwiftUI"
+
+[[project]]
+command = "matapredict"
+repo = "MataPredict"
+featured = false
+team = true
+summary = "matatu overcrowding prediction (team)"
+stack = "Python, scikit-learn, Streamlit"
+demo = "https://matapredict-5seiycsqmwbumdomwionkh.streamlit.app/"
+
+[[project]]
+command = "fleamart"
+repo = "FleaMart"
+featured = false
+team = true
+summary = "store for student businesses (team)"
+stack = "Java, MySQL, JDBC"
+
+# ---------------------------------------------------------------
+# $ cat stack.yml   (icons from skill-icons by tandpfun, MIT)
+# Names are skill-icons file names in lower case, e.g. "githubactions".
+# A row with "text" instead of "icons" is printed as words.
+# ---------------------------------------------------------------
+
+[[stack]]
+key = "languages"
+icons = ["python", "typescript", "javascript", "cpp", "swift", "html", "css"]
+
+[[stack]]
+key = "also_used"
+icons = ["java", "golang", "kotlin", "c", "cs", "dart", "bash", "powershell"]
+
+[[stack]]
+key = "cloud_devops"
+icons = ["aws", "azure", "docker", "kubernetes", "terraform", "ansible",
+         "githubactions", "gitlab", "jenkins", "git", "grafana"]
+
+[[stack]]
+key = "systems"
+icons = ["linux", "ubuntu", "redhat", "kali"]
+
+[[stack]]
+key = "networking"
+text = "Cisco routing & switching, VLANs, TCP/IP, DNS, DHCP"
+
+[[stack]]
+key = "backend_data"
+icons = ["nodejs", "nestjs", "flask", "fastapi", "postgresql", "mysql",
+         "mongodb", "redis", "firebase"]
+
+[[stack]]
+key = "mobile_web"
+icons = ["apple", "flutter", "androidstudio", "react"]
+
+[[stack]]
+key = "tools"
+icons = ["vscode", "postman", "figma", "cmake", "jest", "arduino"]
