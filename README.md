@@ -248,20 +248,15 @@ film    Star Wars (the prequels, specifically) and
 art     Visual art and design; always exploring
         something new.
 ```
-
-<details>
-<summary><code>$ git log --since="1 year ago" | snake</code></summary>
-<br />
+---
+### `$ git log --since="1 year ago" | snake`
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/snake.svg" />
   <img width="100%" alt="A snake eating my contribution graph" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/snake.svg" />
 </picture>
-</details>
 
 ```text
 $ logout
 Connection to github.com closed.
 ```
-
-<sub>This page rebuilds itself every day. <a href="https://github.com/WTavasi/WTavasi/blob/main/.github/workflows/profile.yml">profile.yml</a> pulls live numbers from the GitHub API, redraws the terminal, stack and snake, and commits any change. Text lives in <a href="https://github.com/WTavasi/WTavasi/blob/main/profile/config.toml">config.toml</a>.</sub>
