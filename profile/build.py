@@ -283,11 +283,8 @@ def top_languages(cfg, stats):
 
 
 def lang_colour(t, langs, name):
-    """Theme shades in rank order, so the bar stays purple and green."""
-    names = [n for n, _ in langs]
-    if name == "Other":
-        return t["langs"][-1]
-    return t["langs"][names.index(name) % (len(t["langs"]) - 1)]
+    """GitHub's own language colours, so each language is recognisable."""
+    return LANG_COLOURS.get(name, t["langs"][-1])
 
 
 # ---------------------------------------------------------------- hero SVG
