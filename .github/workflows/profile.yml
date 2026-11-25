@@ -3,7 +3,7 @@ name: profile
 # Rebuilds the profile page:
 #   1. profile/build.py reads profile/config.toml and live GitHub numbers,
 #      draws the terminal and stack images, and refreshes the README sections
-#   2. Platane/snk draws the contribution snake in neutral greys
+#   2. Platane/snk draws the snake, and the streak card is built in dark and light
 #   3. all images go to the "output" branch, which the README links to
 #   4. the README is committed only if something in it changed
 
@@ -39,15 +39,31 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 profile/build.py --icons "$RUNNER_TEMP/skill-icons/icons"
 
-      # Neutral snake. color_dots is five colours: no contributions first,
-      # then light to heavy days. Both use GitHub's own greys.
+      # Snake: contribution squares stay GitHub green, the snake is purple
+      # (green's complementary colour, and the purple in the terminal prompt).
+      # color_dots = five colours: no contributions, then light to heavy days.
       - name: Snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake.svg?color_snake=#57606A&color_dots=#EBEDF0,#D0D7DE,#AFB8C1,#8C959F,#6E7781
-            dist/snake-dark.svg?palette=github-dark&color_snake=#C9D1D9&color_dots=#161B22,#30363D,#484F58,#6E7681,#8B949E
+            dist/snake.svg?color_snake=#8250DF&color_dots=#EBEDF0,#9BE9A8,#40C463,#30A14E,#216E39
+            dist/snake-dark.svg?palette=github-dark&color_snake=#A78BFA&color_dots=#161B22,#0E4429,#006D32,#26A641,#39D353
+
+      # Streak: total contributions, current streak, longest streak.
+      - name: Streak (dark)
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&hide_border=true&background=0A192F&stroke=233554&ring=64FFDA&fire=A78BFA&currStreakNum=CCD6F6&currStreakLabel=64FFDA&sideNums=CCD6F6&sideLabels=CCD6F6&dates=8892B0
+          path: dist/streak-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Streak (light)
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&hide_border=true&background=FFFFFF&stroke=D0D7DE&ring=0F766E&fire=8250DF&currStreakNum=1F2328&currStreakLabel=0F766E&sideNums=1F2328&sideLabels=1F2328&dates=59636E
+          path: dist/streak-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish images to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0

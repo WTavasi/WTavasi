@@ -34,7 +34,7 @@ CONFIG = ROOT / "profile" / "config.toml"
 README = ROOT / "README.md"
 DIST = ROOT / "dist"
 
-PRE_WIDTH = 52  # characters per line in README terminal blocks (phone friendly)
+PRE_WIDTH = 100  # characters per line in README text blocks
 
 # ---------------------------------------------------------------- GitHub API
 
@@ -508,13 +508,12 @@ def wrap(text, indent=4):
 
 def ps_block(cfg, stats):
     rs = stats["repo_stats"]
-    out = ["<pre>", " PID  STAT     LAST PUSH   CMD"]
+    out = ["<pre>", "STATUS     LAST UPDATE   PROJECT"]
     for p in cfg.get("process", []):
         s = rs.get(p.get("repo", ""), {})
         pushed = s.get("pushed", "-")
         name = link(s["url"], p["name"]) if s.get("url") else esc(p["name"])
-        out.append(f"{p['pid']:>4}  {p['state']:<8} {pushed:<10}  {name}")
-        out.append(f"{'':>6}# {esc(p['note'])}")
+        out.append(f"{p['state']:<10} {pushed:<12}  {name}  <i># {esc(p['note'])}</i>")
     out.append("</pre>")
     return "\n".join(out)
 
@@ -526,20 +525,19 @@ def projects_block(cfg, stats):
         if not p.get("featured"):
             continue
         s = rs.get(p["repo"], {})
-        lines = ["<pre>", f"<b>$ man {esc(p['command'])}</b>", "", "<b>NAME</b>"]
-        lines += [esc(x) for x in wrap(p["title"])]
-        if p.get("subtitle"):
-            lines += [esc(x) for x in wrap(f"({p['subtitle']})")]
-        lines += ["", "<b>DESCRIPTION</b>"] + [esc(x) for x in wrap(p["description"])]
-        lines += ["", "<b>PROOF</b>"]
+        lines = ["<pre>", f"<b>$ man {esc(p['command'])}</b>", "", "<b>PROJECT</b>"]
+        name = p["title"] + (f" ({p['subtitle']})" if p.get("subtitle") else "")
+        lines += [esc(x) for x in wrap(name)]
+        lines += ["", "<b>WHAT IT DOES</b>"] + [esc(x) for x in wrap(p["description"])]
+        lines += ["", "<b>RESULTS</b>"]
         for item in p["proof"]:
             lines += [esc(x) for x in textwrap.wrap(item, PRE_WIDTH, initial_indent="    + ",
                                                     subsequent_indent="      ")]
-        lines += ["", "<b>STACK</b>"] + [esc(x) for x in wrap(p["stack"])]
-        lines += ["", "<b>SEE ALSO</b>"]
+        lines += ["", "<b>BUILT WITH</b>"] + [esc(x) for x in wrap(p["stack"])]
+        lines += ["", "<b>LINKS</b>"]
         if s:
             who = "commits by me" if p.get("team") else "commits"
-            lines.append(f"    {link(s['url'], 'source')} · {s['commits']:,} {who} · "
+            lines.append(f"    {link(s['url'], 'source code')} · {s['commits']:,} {who} · "
                          f"pushed {s['pushed']}")
         lines.append("</pre>")
         blocks.append("\n".join(lines))

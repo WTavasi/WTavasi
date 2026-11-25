@@ -45,7 +45,7 @@ info = [
 ]
 
 # ---------------------------------------------------------------
-# $ ps -ef | grep wyclef      (LAST PUSH is read from GitHub)
+# Currently working on   (LAST UPDATE is read from GitHub)
 # ---------------------------------------------------------------
 
 [[process]]
@@ -53,20 +53,20 @@ pid = 1001
 state = "building"
 name = "elder-emergency-escalation"
 repo = "elder-emergency-escalation"
-note = "capstone: real-time escalation engine"
+note = "final-year project: real-time escalation engine"
 
 [[process]]
 pid = 1002
-state = "staging"
+state = "uploading"
 name = "kubernetes-deployment"
 note = "multi-service e-commerce app; repo soon"
 
 [[process]]
 pid = 1003
-state = "porting"
+state = "updating"
 name = "finatrack"
 repo = "FinaTrack"
-note = "UIKit to SwiftUI"
+note = "moving the UI from UIKit to SwiftUI"
 
 # ---------------------------------------------------------------
 # $ ls ~/projects
@@ -80,7 +80,7 @@ command = "mzazicare"
 repo = "elder-emergency-escalation"
 featured = true
 title = "MzaziCare: emergency help for elders at home"
-subtitle = "final-year capstone"
+subtitle = "final-year project"
 description = """One SOS press escalates from caregiver to family \
 to emergency services until someone accepts. Severity is scored from \
 five weighted factors, with an SMS fallback when push fails, live \
@@ -117,8 +117,8 @@ team = true
 title = "3D-Solar-Navigator (Project Stellar)"
 subtitle = "team of six"
 description = """A Solar System scene drawn with raster graphics \
-algorithms written from scratch in C++17. My part is testing and \
-integration."""
+algorithms written from scratch in C++17. My part involved testing \
+and integration."""
 proof = [
   "built the CTest pipeline on GitHub Actions",
   "163 test cases: unit, integration and visual",
