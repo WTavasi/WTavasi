@@ -87,8 +87,8 @@ music    Principal clarinet in two orchestras.
 
 <b>DESCRIPTION</b>
     One SOS press escalates from caregiver to family to emergency services until someone accepts.
-    Severity is scored from five weighted factors, with an SMS fallback when push fails, live updates and a full audit 
-    trail.
+    Severity is scored from five weighted factors, with an SMS fallback when push fails, live updates and 
+    a full audit trail.
 
 <b>PROOF</b>
     + 1,417 automated tests, 12 of 12 system tests
@@ -228,7 +228,8 @@ certifications/
 ### `$ cat ~/.interests`
 
 ```text
-music   Classically trained clarinetist. I compose, arrange and produce, and perform with orchestras and live bands.
+music   Classically trained clarinetist. I compose, arrange and produce, and 
+        perform with orchestras and live bands.
 film    Star Wars (the prequels, specifically) and The Hunger Games, books included.
 art     Visual art and design; always exploring something new.
 ```
