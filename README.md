@@ -22,11 +22,9 @@
 ### `$ whoami`
 
 ```text
-Wyclef Tavasi. I like building systems that keep
-working when things go wrong: cloud infrastructure,
-Linux servers, networks, and the backends behind
-real-time apps. I learn by building, and I document
-as I go.
+Wyclef Tavasi. I like building systems that keep working when things go wrong: 
+cloud infrastructure, Linux servers, networks, and the backends behind real-time apps.
+I learn by building, and I document as I go.
 ```
 
 ---
@@ -85,15 +83,12 @@ music    Principal clarinet in two orchestras.
 <b>$ man mzazicare</b>
 
 <b>NAME</b>
-    MzaziCare: emergency help for elders at home
-    (final-year capstone)
+    MzaziCare: emergency help for elders at home (final-year project)
 
 <b>DESCRIPTION</b>
-    One SOS press escalates from caregiver to family
-    to emergency services until someone accepts.
-    Severity is scored from five weighted factors,
-    with an SMS fallback when push fails, live
-    updates and a full audit trail.
+    One SOS press escalates from caregiver to family to emergency services until someone accepts.
+    Severity is scored from five weighted factors, with an SMS fallback when push fails, live updates and a full audit 
+    trail.
 
 <b>PROOF</b>
     + 1,417 automated tests, 12 of 12 system tests
@@ -101,8 +96,7 @@ music    Principal clarinet in two orchestras.
     + care circle sees live updates in 16 ms
 
 <b>STACK</b>
-    NestJS, PostgreSQL, Redis + BullMQ, WebSockets,
-    Flutter, React, Docker, GitHub Actions
+    NestJS, PostgreSQL, Redis + BullMQ, WebSockets, Flutter, React, Docker, GitHub Actions
 
 <b>SEE ALSO</b>
     <a href="https://github.com/WTavasi/elder-emergency-escalation">source</a> · 277 commits · pushed 2026-11-16
@@ -112,15 +106,11 @@ music    Principal clarinet in two orchestras.
 <b>$ man load-balancer</b>
 
 <b>NAME</b>
-    Consistent Hashing Load Balancer
-    (distributed systems)
+    Consistent Hashing Load Balancer (distributed systems)
 
 <b>DESCRIPTION</b>
-    Routes HTTP requests across containerised
-    replicas on a 512-slot hash ring with 9 virtual
-    nodes per server. A heartbeat monitor replaces
-    failed replicas on its own, and a REST API adds
-    or removes them at runtime.
+    Routes HTTP requests across containerised replicas on a 512-slot hash ring with 9 virtual nodes per server. 
+    A heartbeat monitor replaces failed replicas on its own, and a REST API adds or removes them at runtime.
 
 <b>PROOF</b>
     + 35 unit and API tests
@@ -138,13 +128,11 @@ music    Principal clarinet in two orchestras.
 <b>$ man solar-navigator</b>
 
 <b>NAME</b>
-    3D-Solar-Navigator (Project Stellar)
-    (team of six)
+    3D-Solar-Navigator (Project Stellar)(team of six)
 
 <b>DESCRIPTION</b>
-    A Solar System scene drawn with raster graphics
-    algorithms written from scratch in C++17. My
-    part is testing and integration.
+    A Solar System scene drawn with raster graphics algorithms written from scratch in C++17. 
+    My part involved testing and integration.
 
 <b>PROOF</b>
     + built the CTest pipeline on GitHub Actions
@@ -240,13 +228,9 @@ certifications/
 ### `$ cat ~/.interests`
 
 ```text
-music   Classically trained clarinetist. I compose,
-        arrange and produce, and perform with
-        orchestras and live bands.
-film    Star Wars (the prequels, specifically) and
-        The Hunger Games, books included.
-art     Visual art and design; always exploring
-        something new.
+music   Classically trained clarinetist. I compose, arrange and produce, and perform with orchestras and live bands.
+film    Star Wars (the prequels, specifically) and The Hunger Games, books included.
+art     Visual art and design; always exploring something new.
 ```
 ---
 ### `$ git log --since="1 year ago" | snake`
