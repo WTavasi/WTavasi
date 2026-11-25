@@ -7,15 +7,15 @@
 </picture>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/WyclefTavasi"><img src="https://img.shields.io/badge/LinkedIn-Wyclef_Tavasi-112240?style=for-the-badge&logo=linkedin&logoColor=64FFDA&labelColor=0A192F" alt="LinkedIn" /></a>
-  <a href="mailto:wycleftavasi@gmail.com"><img src="https://img.shields.io/badge/Email-wycleftavasi%40gmail.com-112240?style=for-the-badge&logo=gmail&logoColor=64FFDA&labelColor=0A192F" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/WyclefTavasi"><img src="https://img.shields.io/badge/LinkedIn-Wyclef_Tavasi-6E40C9?style=for-the-badge&logo=linkedin&logoColor=FFFFFF&labelColor=2EA043" alt="LinkedIn" /></a>
+  <a href="mailto:wycleftavasi@gmail.com"><img src="https://img.shields.io/badge/Email-wycleftavasi%40gmail.com-6E40C9?style=for-the-badge&logo=gmail&logoColor=FFFFFF&labelColor=2EA043" alt="Email" /></a>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=64FFDA&center=true&vCenter=true&width=600&lines=Cloud+%26+DevOps+Engineering;Linux+%26+Network+Administration;Distributed+Systems;iOS+Development+with+Swift" />
-    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=0F766E&center=true&vCenter=true&width=600&lines=Cloud+%26+DevOps+Engineering;Linux+%26+Network+Administration;Distributed+Systems;iOS+Development+with+Swift" />
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=64FFDA&center=true&vCenter=true&width=600&lines=Cloud+%26+DevOps+Engineering;Linux+%26+Network+Administration;Distributed+Systems;iOS+Development+with+Swift" alt="Cloud and DevOps Engineering, Linux and Network Administration, Distributed Systems, iOS Development with Swift" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=A78BFA&center=true&vCenter=true&width=600&lines=Cloud+%26+DevOps+Engineering;Linux+%26+Network+Administration;Distributed+Systems;iOS+Development+with+Swift" />
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=8250DF&center=true&vCenter=true&width=600&lines=Cloud+%26+DevOps+Engineering;Linux+%26+Network+Administration;Distributed+Systems;iOS+Development+with+Swift" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=A78BFA&center=true&vCenter=true&width=600&lines=Cloud+%26+DevOps+Engineering;Linux+%26+Network+Administration;Distributed+Systems;iOS+Development+with+Swift" alt="Cloud and DevOps Engineering, Linux and Network Administration, Distributed Systems, iOS Development with Swift" />
   </picture>
 </p>
 

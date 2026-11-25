@@ -155,22 +155,25 @@ def collect(cfg: dict, gh: GitHub) -> dict:
 
 # ---------------------------------------------------------------- themes
 
+# Purple and green, matching the contribution snake.
 THEMES = {
     "dark": {
-        "bg": "#0A192F", "bar": "#112240", "border": "#233554",
-        "text": "#CCD6F6", "dim": "#8892B0", "accent": "#64FFDA",
-        "accent2": "#A78BFA", "ok": "#64FFDA",
+        "bg": "#1E1A2B", "bar": "#2A2340", "border": "#3D3359",
+        "text": "#E6E1F5", "dim": "#A79FC2", "accent": "#3FB950",
+        "accent2": "#A78BFA", "ok": "#3FB950",
         "dots": ["#FF5F57", "#FEBC2E", "#28C840"],
-        "blocks": ["#233554", "#FF6B6B", "#64FFDA", "#FEBC2E",
-                   "#57A6FF", "#A78BFA", "#2BB3A0", "#CCD6F6"],
+        "blocks": ["#6E40C9", "#8957E5", "#A371F7", "#C297FF",
+                   "#196C2E", "#2EA043", "#3FB950", "#56D364"],
+        "langs": ["#8957E5", "#2EA043", "#A371F7", "#56D364", "#C297FF", "#7D7396"],
     },
     "light": {
-        "bg": "#FFFFFF", "bar": "#F6F8FA", "border": "#D0D7DE",
-        "text": "#1F2328", "dim": "#59636E", "accent": "#0F766E",
-        "accent2": "#6D28D9", "ok": "#0F766E",
+        "bg": "#FFFFFF", "bar": "#F3EEFC", "border": "#D8CCF2",
+        "text": "#24203A", "dim": "#615A7A", "accent": "#1A7F37",
+        "accent2": "#8250DF", "ok": "#1A7F37",
         "dots": ["#FF5F57", "#FEBC2E", "#28C840"],
-        "blocks": ["#D0D7DE", "#CF222E", "#0F766E", "#9A6700",
-                   "#0969DA", "#6D28D9", "#1A7F37", "#1F2328"],
+        "blocks": ["#5A32A3", "#6E40C9", "#8250DF", "#A475F9",
+                   "#116329", "#1A7F37", "#2DA44E", "#4AC26B"],
+        "langs": ["#6E40C9", "#1A7F37", "#A475F9", "#2DA44E", "#C297FF", "#8C849F"],
     },
 }
 
@@ -279,6 +282,14 @@ def top_languages(cfg, stats):
     return top
 
 
+def lang_colour(t, langs, name):
+    """Theme shades in rank order, so the bar stays purple and green."""
+    names = [n for n, _ in langs]
+    if name == "Other":
+        return t["langs"][-1]
+    return t["langs"][names.index(name) % (len(t["langs"]) - 1)]
+
+
 # ---------------------------------------------------------------- hero SVG
 
 
@@ -317,7 +328,7 @@ def hero_svg(cfg, stats, theme: str) -> str:
         if line and len("  ".join(x for x, _ in line)) + len(item) + 4 > 40:
             legend.append(line)
             line = []
-        line.append((item, LANG_COLOURS.get(name, t["dim"])))
+        line.append((item, lang_colour(t, langs, name)))
     if line:
         legend.append(line)
     rows += [("legend", ln) for ln in legend]
@@ -400,7 +411,7 @@ def hero_svg(cfg, stats, theme: str) -> str:
             cur = bx
             for name, share in langs:
                 w = max(bar_w * share, 2)
-                segs.append(f'<rect x="{cur:.1f}" y="{by:.1f}" width="{w:.1f}" height="10" fill="{LANG_COLOURS.get(name, t["dim"])}"/>')
+                segs.append(f'<rect x="{cur:.1f}" y="{by:.1f}" width="{w:.1f}" height="10" fill="{lang_colour(t, langs, name)}"/>')
                 cur += w
             body.append(f'<g class="s"{d}><clipPath id="barclip-{theme}"><rect x="{bx:.1f}" y="{by:.1f}" width="{bar_w:.1f}" height="10" rx="5"/></clipPath>'
                         f'<g clip-path="url(#barclip-{theme})">{"".join(segs)}</g></g>')
