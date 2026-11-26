@@ -111,7 +111,7 @@ music    Principal clarinet in two orchestras.
     NestJS, PostgreSQL, Redis + BullMQ, WebSockets, Flutter, React, Docker, GitHub Actions
 
 <b>LINKS</b>
-    <a href="https://github.com/WTavasi/elder-emergency-escalation">source code</a> · 279 commits · pushed 2026-11-25
+    <a href="https://github.com/WTavasi/elder-emergency-escalation">source code</a> · 287 commits · pushed 2026-11-26
 </pre>
 
 <pre>
@@ -183,7 +183,7 @@ music    Principal clarinet in two orchestras.
 <!-- BEGIN ps -->
 <pre>
 STATUS     LAST UPDATE   PROJECT
-building   2026-11-25    <a href="https://github.com/WTavasi/elder-emergency-escalation">elder-emergency-escalation</a>  <i># final-year project: real-time escalation engine</i>
+building   2026-11-26    <a href="https://github.com/WTavasi/elder-emergency-escalation">elder-emergency-escalation</a>  <i># final-year project: real-time escalation engine</i>
 uploading  -             kubernetes-deployment  <i># multi-service e-commerce app; repo soon</i>
 updating   2026-09-14    <a href="https://github.com/WTavasi/FinaTrack">finatrack</a>  <i># moving the UI from UIKit to SwiftUI</i>
 </pre>
