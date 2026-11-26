@@ -81,6 +81,31 @@ class GitHub:
         return data["data"]
 
 
+CALENDAR_QUERY = """
+query($login: String!, $from: DateTime!, $to: DateTime!) {
+  user(login: $login) {
+    contributionsCollection(from: $from, to: $to) {
+      contributionCalendar { weeks { contributionDays { date contributionCount } } }
+    }
+  }
+}"""
+
+
+def fetch_calendar(gh: GitHub, login: str, created: str) -> dict[str, int]:
+    """Daily contribution counts from account creation to today (one year per query)."""
+    days: dict[str, int] = {}
+    start = dt.datetime.fromisoformat(created.replace("Z", "+00:00"))
+    now = dt.datetime.now(dt.timezone.utc)
+    while start < now:
+        end = min(start + dt.timedelta(days=365), now)
+        data = gh.graphql(CALENDAR_QUERY, {"login": login, "from": start.isoformat(), "to": end.isoformat()})
+        for week in data["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]:
+            for d in week["contributionDays"]:
+                days[d["date"]] = d["contributionCount"]
+        start = end
+    return dict(sorted(days.items()))
+
+
 CONTRIB_QUERY = """
 query($login: String!) {
   user(login: $login) {
@@ -132,7 +157,12 @@ def collect(cfg: dict, gh: GitHub) -> dict:
             pass
 
     commits_year = prs_year = None
+    calendar = None
     if gh.token:
+        try:
+            calendar = fetch_calendar(gh, login, user["created_at"])
+        except Exception as exc:
+            print(f"warning: calendar failed: {exc}", file=sys.stderr)
         try:
             c = gh.graphql(CONTRIB_QUERY, {"login": login})["user"]["contributionsCollection"]
             commits_year = c["totalCommitContributions"]
@@ -149,6 +179,7 @@ def collect(cfg: dict, gh: GitHub) -> dict:
         "prs_year": prs_year,
         "languages": languages,
         "repo_stats": repo_stats,
+        "calendar": calendar,
         "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
     }
 
@@ -164,6 +195,7 @@ THEMES = {
         "dots": ["#FF5F57", "#FEBC2E", "#28C840"],
         "blocks": ["#6E40C9", "#8957E5", "#A371F7", "#C297FF",
                    "#196C2E", "#2EA043", "#3FB950", "#56D364"],
+        "heat": ["#2A2340", "#0E4429", "#006D32", "#26A641", "#39D353"],
         "langs": ["#8957E5", "#2EA043", "#A371F7", "#56D364", "#C297FF", "#7D7396"],
     },
     "light": {
@@ -173,6 +205,7 @@ THEMES = {
         "dots": ["#FF5F57", "#FEBC2E", "#28C840"],
         "blocks": ["#5A32A3", "#6E40C9", "#8250DF", "#A475F9",
                    "#116329", "#1A7F37", "#2DA44E", "#4AC26B"],
+        "heat": ["#EBEDF0", "#9BE9A8", "#40C463", "#30A14E", "#216E39"],
         "langs": ["#6E40C9", "#1A7F37", "#A475F9", "#2DA44E", "#C297FF", "#8C849F"],
     },
 }
@@ -502,6 +535,92 @@ def stack_svg(cfg, icons, theme: str) -> str:
     return window(width, height, "stack.yml", t, notice + "\n" + "\n".join(body), "", label)
 
 
+# ---------------------------------------------------------------- streak SVG
+
+
+def streaks(calendar: dict[str, int]):
+    """Total, current and longest streak. Today with no contributions yet does not break a streak."""
+    dates = sorted(calendar)
+    total = sum(calendar.values())
+    first = next((d for d in dates if calendar[d] > 0), None)
+    longest = (0, None, None)
+    run, run_start = 0, None
+    for d in dates:
+        if calendar[d] > 0:
+            run_start = run_start or d
+            run += 1
+            if run > longest[0]:
+                longest = (run, run_start, d)
+        else:
+            run, run_start = 0, None
+    cur_dates = list(dates)
+    if cur_dates and calendar[cur_dates[-1]] == 0:
+        cur_dates.pop()
+    current, end = 0, cur_dates[-1] if cur_dates else None
+    for d in reversed(cur_dates):
+        if calendar[d] == 0:
+            break
+        current += 1
+    start = cur_dates[-current] if current else None
+    return total, first, (current, start, end if current else None), longest
+
+
+def nice(d: str | None, year=False) -> str:
+    if not d:
+        return "-"
+    x = dt.date.fromisoformat(d)
+    return f"{x:%b} {x.day}, {x.year}" if year else f"{x:%b} {x.day}"
+
+
+def streak_svg(cfg, stats, theme: str) -> str:
+    t = THEMES[theme]
+    cal = stats.get("calendar") or {}
+    total, first, (cur, cs, ce), (lon, ls, le) = streaks(cal)
+    width = 760
+    user, host = cfg["prompt_user"], cfg["prompt_host"]
+    prompt = (f'<tspan fill="{t["accent2"]}">{user}@{host}</tspan>'
+              f':<tspan fill="{t["accent"]}">~</tspan>$ ')
+    body = []
+    y = BAR_H + PAD + 10
+    body.append(text_el(PAD, y, prompt + "git log --stat --all --author=wyclef", "", t["text"]))
+    y += LH * 1.8
+    rows = [
+        ("Total contributions", f"{total:,}", f"{nice(first, True)} - present"),
+        ("Current streak", f"{cur} day{'s' if cur != 1 else ''}", f"{nice(cs)} - {nice(ce)}" if cur else "start one today"),
+        ("Longest streak", f"{lon} day{'s' if lon != 1 else ''}", f"{nice(ls)} - {nice(le)}" if lon else "-"),
+    ]
+    for key, value, dates in rows:
+        body.append(text_el(PAD + 2 * CW, y,
+                            f'<tspan fill="{t["accent"]}" font-weight="bold">{esc(key):<21}</tspan>'
+                            f'<tspan fill="{t["text"]}" font-weight="bold">{esc(value):<10}</tspan>'
+                            f'<tspan fill="{t["dim"]}">{esc(dates)}</tspan>', "", t["text"]))
+        y += LH * 1.25
+
+    # last 30 days as squares: green by activity, purple outline on the current streak
+    y += LH * 0.6
+    days = list(cal.items())[-30:]
+    body.append(text_el(PAD + 2 * CW, y + 12, "Last 30 days", "", t["dim"]))
+    peak = max([c for _, c in days] + [1])
+    shades = t["heat"]
+    x = PAD + 16 * CW
+    streak_days = set()
+    if cur:
+        d = dt.date.fromisoformat(cs)
+        while d <= dt.date.fromisoformat(ce):
+            streak_days.add(d.isoformat())
+            d += dt.timedelta(days=1)
+    for i, (date, count) in enumerate(days):
+        level = 0 if count == 0 else min(4, 1 + int(3 * count / peak))
+        stroke = f' stroke="{t["accent2"]}" stroke-width="2"' if date in streak_days else ""
+        body.append(f'<rect x="{x + i * 16:.1f}" y="{y:.1f}" width="12" height="12" rx="2" fill="{shades[level]}"{stroke}><title>{date}: {count}</title></rect>')
+    y += 12 + LH * 1.9
+    body.append(text_el(PAD, y, prompt + f'<tspan fill="{t["accent"]}">█</tspan>', "", t["text"]))
+    height = int(y + PAD - 4)
+    label = (f"Contribution streak. Total contributions: {total:,} since {nice(first, True)}. "
+             f"Current streak: {cur} days. Longest streak: {lon} days ({nice(ls)} to {nice(le)}).")
+    return window(width, height, "contributions", t, "\n".join(body), "", label)
+
+
 # ---------------------------------------------------------------- README sections
 
 
@@ -590,6 +709,8 @@ def main():
         stats = json.loads(args.fixture.read_text())
     else:
         stats = collect(cfg, GitHub(os.environ.get("GITHUB_TOKEN")))
+    if not args.fixture and not stats.get("calendar"):
+        raise SystemExit("no contribution calendar; keeping the previous images")
     if args.save_stats:
         args.save_stats.write_text(json.dumps(stats, indent=2))
 
@@ -598,6 +719,8 @@ def main():
     for theme in THEMES:
         (DIST / f"terminal-{theme}.svg").write_text(hero_svg(cfg, stats, theme))
         (DIST / f"stack-{theme}.svg").write_text(stack_svg(cfg, icons, theme))
+        if stats.get("calendar"):
+            (DIST / f"streak-{theme}.svg").write_text(streak_svg(cfg, stats, theme))
 
     text = README.read_text()
     text = replace_section(text, "ps", ps_block(cfg, stats))

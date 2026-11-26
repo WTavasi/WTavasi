@@ -249,7 +249,7 @@ art     Visual art and design; always exploring something new.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/streak-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WTavasi/WTavasi/output/streak-light.svg" />
-  <img alt="Contribution streak: total contributions, current streak and longest streak" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/streak-dark.svg" />
+  <img width="100%" alt="Contribution streak in a terminal: total contributions, current streak, longest streak and the last 30 days" src="https://raw.githubusercontent.com/WTavasi/WTavasi/output/streak-dark.svg" />
 </picture>
 </p>
 

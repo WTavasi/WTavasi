@@ -3,7 +3,7 @@ name: profile
 # Rebuilds the profile page:
 #   1. profile/build.py reads profile/config.toml and live GitHub numbers,
 #      draws the terminal and stack images, and refreshes the README sections
-#   2. Platane/snk draws the snake, and the streak card is built in dark and light
+#   2. Platane/snk draws the snake (build.py also draws the streak terminal)
 #   3. all images go to the "output" branch, which the README links to
 #   4. the README is committed only if something in it changed
 
@@ -49,21 +49,6 @@ jobs:
           outputs: |
             dist/snake.svg?color_snake=#8250DF&color_dots=#EBEDF0,#9BE9A8,#40C463,#30A14E,#216E39
             dist/snake-dark.svg?palette=github-dark&color_snake=#A78BFA&color_dots=#161B22,#0E4429,#006D32,#26A641,#39D353
-
-      # Streak: total contributions, current streak, longest streak.
-      - name: Streak (dark)
-        uses: DenverCoder1/github-readme-streak-stats@main
-        with:
-          options: user=${{ github.repository_owner }}&hide_border=true&background=1E1A2B&stroke=3D3359&ring=3FB950&fire=A78BFA&currStreakNum=E6E1F5&currStreakLabel=3FB950&sideNums=E6E1F5&sideLabels=A78BFA&dates=A79FC2
-          path: dist/streak-dark.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Streak (light)
-        uses: DenverCoder1/github-readme-streak-stats@main
-        with:
-          options: user=${{ github.repository_owner }}&hide_border=true&background=FFFFFF&stroke=D8CCF2&ring=1A7F37&fire=8250DF&currStreakNum=24203A&currStreakLabel=1A7F37&sideNums=24203A&sideLabels=8250DF&dates=615A7A
-          path: dist/streak-light.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish images to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
