@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="265" viewBox="0 0 760 265" role="img" aria-label="Contribution streak. Total contributions: 776 since Jul 12, 2023. Current streak: 3 days. Longest streak: 27 days (Sep 27 to Oct 23).">
+<title>Contribution streak. Total contributions: 776 since Jul 12, 2023. Current streak: 3 days. Longest streak: 27 days (Sep 27 to Oct 23).</title>
+<style>
+text { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace; font-size: 14px; white-space: pre; }
+
+</style>
+<rect x="0.5" y="0.5" width="759" height="264" rx="10" fill="#FFFFFF" stroke="#D8CCF2"/>
+<path d="M0.5 10.5a10 10 0 0 1 10-10h739a10 10 0 0 1 10 10v24h-759z" fill="#F3EEFC"/>
+<line x1="0.5" y1="34.5" x2="759.5" y2="34.5" stroke="#D8CCF2"/>
+<circle cx="20" cy="17.5" r="6" fill="#FF5F57"/><circle cx="40" cy="17.5" r="6" fill="#FEBC2E"/><circle cx="60" cy="17.5" r="6" fill="#28C840"/>
+<text x="380.0" y="22.0" text-anchor="middle" fill="#615A7A" style="font-size:13px">contributions</text>
+<text x="26.0" y="70.0" fill="#24203A" xml:space="preserve"><tspan fill="#8250DF">wyclef@github</tspan>:<tspan fill="#1A7F37">~</tspan>$ git log --stat --all --author=wyclef</text>
+<text x="42.9" y="106.0" fill="#24203A" xml:space="preserve"><tspan fill="#1A7F37" font-weight="bold">Total contributions  </tspan><tspan fill="#24203A" font-weight="bold">776       </tspan><tspan fill="#615A7A">Jul 12, 2023 - present</tspan></text>
+<text x="42.9" y="131.0" fill="#24203A" xml:space="preserve"><tspan fill="#1A7F37" font-weight="bold">Current streak       </tspan><tspan fill="#24203A" font-weight="bold">3 days    </tspan><tspan fill="#615A7A">Nov 24 - Nov 26</tspan></text>
+<text x="42.9" y="156.0" fill="#24203A" xml:space="preserve"><tspan fill="#1A7F37" font-weight="bold">Longest streak       </tspan><tspan fill="#24203A" font-weight="bold">27 days   </tspan><tspan fill="#615A7A">Sep 27 - Oct 23</tspan></text>
+<text x="42.9" y="205.0" fill="#615A7A" xml:space="preserve">Last 30 days</text>
+<rect x="160.8" y="193.0" width="12" height="12" rx="2" fill="#40C463"><title>2026-10-29: 12</title></rect>
+<rect x="176.8" y="193.0" width="12" height="12" rx="2" fill="#EBEDF0"><title>2026-10-30: 0</title></rect>
+<rect x="192.8" y="193.0" width="12" height="12" rx="2" fill="#EBEDF0"><title>2026-10-31: 0</title></rect>
+<rect x="208.8" y="193.0" width="12" height="12" rx="2" fill="#EBEDF0"><title>2026-11-01: 0</title></rect>
+<rect x="224.8" y="193.0" width="12" height="12" rx="2" fill="#9BE9A8"><title>2026-11-02: 6</title></rect>
+<rect x="240.8" y="193.0" width="12" height="12" rx="2" fill="#9BE9A8"><title>2026-11-03: 1</title></rect>
+<rect x="256.8" y="193.0" width="12" height="12" rx="2" fill="#9BE9A8"><title>2026-11-04: 9</title></rect>
+<rect x="272.8" y="193.0" width="12" height="12" rx="2" fill="#216E39"><title>2026-11-05: 33</title></rect>
+<rect x="288.8" y="193.0" width="12" height="12" rx="2" fill="#9BE9A8"><title>2026-11-06: 6</title></rect>
+<rect x="304.8" y="193.0" width="12" height="12" rx="2" fill="#EBEDF0"><title>2026-11-07: 0</title></rect>
+<rect x="320.8" y="193.0" width="12" height="12" rx="2" fill="#9BE9A8"><title>2026-11-08: 1</title></rect>
+<rect x="336.8" y="193.0" width="12" height="12" rx="2" fill="#9BE9A8"><title>2026-11-09: 9</title></rect>
+<rect x="352.8" y="193.0" width="12" height="12" rx="2" fill="#EBEDF0"><title>2026-11-10: 0</title></rect>
+<rect x="368.8" y="193.0" width="12" height="12" rx="2" fill="#9BE9A8"><title>2026-11-11: 2</title></rect>
+<rect x="384.8" y="193.0" width="12" height="12" rx="2" fill="#9BE9A8"><title>2026-11-12: 4</title></rect>
+<rect x="400.8" y="193.0" width="12" height="12" rx="2" fill="#EBEDF0"><title>2026-11-13: 0</title></rect>
+<rect x="416.8" y="193.0" width="12" height="12" rx="2" fill="#9BE9A8"><title>2026-11-14: 6</title></rect>
+<rect x="432.8" y="193.0" width="12" height="12" rx="2" fill="#40C463"><title>2026-11-15: 16</title></rect>
+<rect x="448.8" y="193.0" width="12" height="12" rx="2" fill="#40C463"><title>2026-11-16: 11</title></rect>
+<rect x="464.8" y="193.0" width="12" height="12" rx="2" fill="#EBEDF0"><title>2026-11-17: 0</title></rect>
+<rect x="480.8" y="193.0" width="12" height="12" rx="2" fill="#9BE9A8"><title>2026-11-18: 3</title></rect>
+<rect x="496.8" y="193.0" width="12" height="12" rx="2" fill="#EBEDF0"><title>2026-11-19: 0</title></rect>
+<rect x="512.8" y="193.0" width="12" height="12" rx="2" fill="#EBEDF0"><title>2026-11-20: 0</title></rect>
+<rect x="528.8" y="193.0" width="12" height="12" rx="2" fill="#9BE9A8"><title>2026-11-21: 6</title></rect>
+<rect x="544.8" y="193.0" width="12" height="12" rx="2" fill="#EBEDF0"><title>2026-11-22: 0</title></rect>
+<rect x="560.8" y="193.0" width="12" height="12" rx="2" fill="#EBEDF0"><title>2026-11-23: 0</title></rect>
+<rect x="576.8" y="193.0" width="12" height="12" rx="2" fill="#30A14E" stroke="#8250DF" stroke-width="2"><title>2026-11-24: 26</title></rect>
+<rect x="592.8" y="193.0" width="12" height="12" rx="2" fill="#30A14E" stroke="#8250DF" stroke-width="2"><title>2026-11-25: 24</title></rect>
+<rect x="608.8" y="193.0" width="12" height="12" rx="2" fill="#40C463" stroke="#8250DF" stroke-width="2"><title>2026-11-26: 17</title></rect>
+<rect x="624.8" y="193.0" width="12" height="12" rx="2" fill="#EBEDF0"><title>2026-11-27: 0</title></rect>
+<text x="26.0" y="243.0" fill="#24203A" xml:space="preserve"><tspan fill="#8250DF">wyclef@github</tspan>:<tspan fill="#1A7F37">~</tspan>$ <tspan fill="#1A7F37">█</tspan></text>
+</svg>
